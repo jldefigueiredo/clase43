@@ -1,23 +1,21 @@
 import logo from './logo.svg';
-import './App.css';
+import Sidebar from './components/Sidebar'
+import ContentWrapper from './components/ContentWrapper'
+import css from './assets/css/app.css';
+import darthVader from './assets/images/darth-vader.jpg'
+import mandalorian from './assets/images/mandalorian.jpg'
+import jordanWalke from './assets/images/jordan-walke.png'
+
+import stormTrooper from './assets/images/stormtrooper.jpg'
+
+
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar />
+      <ContentWrapper />
     </div>
   );
 }
